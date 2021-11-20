@@ -1,8 +1,8 @@
-module "vpc_network" {
-  source  = "../modules/vpc/"
+module "storage" {
+  source  = "../modules/storage/"
   project = var.project
   region  = var.region
   zone    = var.zone
   env     = var.env
-  network = var.network
+  storage = var.storage
 }
